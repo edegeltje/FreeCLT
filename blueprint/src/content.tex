@@ -5,44 +5,6 @@
 % If you want to split the blueprint content into several files then
 % the current file can be a simple sequence of \input. Otherwise It
 % can start with a \section or \chapter for instance.
-
-\chapter{definitions}
-
-\begin{definition}
-  \label{def:NCPS}
-  A \textit{non-commutative probability space} \((\mathcal{A},\varphi)\) consists of
-  \begin{itemize}
-    \item a unital (associative) algebra \(\mathcal{A}\) (over \(\mathbb{C}\)) and
-    \item a linear map \(\varphi:\mathcal{A} \rightarrow \mathbb{C}\) that preserves \(1\).
-  \end{itemize}
-\end{definition}
-
-\begin{definition}
-  \label{def:centered}
-  An element \(a\) of a probability space \(\mathbb{A}\) is called \textit{centered} when
-  \(\varphi(a)=0\).
-\end{definition}
-
-in this blueprint, when we write \([n]\), we will refer to the set/type \(\{0,\ldots,n\}\)
-
-\begin{definition}
-  \label{def:alt_label}
-  A finite sequence of elements \((a_j)_{j\in [n]}\) has an \textit{alternating \(I\)-labeling} when
-  there exists a function \(f:[n]\rightarrow I\) such that for adjacent \(j,j' \in [n]\),
-  \(f(j)\neq f(j')\) holds.
-\end{definition}
-
-\begin{definition}
-  \label{def:FreeIndep}
-  \uses{def:centered,def:alt_label}
-  An indexed family of subalgebras \((\mathcal{A}_i)_{i\in I}\) is called \textit{free} or
-  \textit{freely independent} when the following holds:
-  \begin{itemize}
-    \item For any finite sequence of \(n\) elements \((a_j)_{j\in [n]}\)
-    \item such that these elements are all centered,
-    \item given an alternating \(I\)-labeling for \((a_j)_{j\in [n]}\)
-    \item such that \(a_j \in \mathcal{A}_{f(j)}\) for all \(j\in [n]\),
-    \item one can conclude that the (non-commutative) product
-      \(\prod_{j\in[n]}^{\rightarrow} a_j\) is balanced
-  \end{itemize}
-\end{definition}
+\input{Commands/commands.tex}
+\input{Chapters/chapter1.tex}
+\input{Chapters/chapter2.tex}

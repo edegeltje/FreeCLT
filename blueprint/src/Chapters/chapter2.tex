@@ -1,0 +1,26 @@
+\chapter{warming up}
+
+\begin{lemma}
+  \label{lem:freeIndep_congr}
+  \uses{def:FreeIndep}
+  Let \((\A,\phi)\) be a probability space, and let \((\A_i)_{i\in I}\) and \((\B_i)_{i\in I}\) be
+  families of subalgebras with \(\A_i = \B_i\) for all \(i\). Then if \((\A_i)_{i \in I}\) is freely
+  independent, so is \((\B_i)_{i\in I}\).
+\end{lemma}
+
+\begin{lemma}
+  \label{lem:freeIndep_of_inj}
+  \uses{lem:freeIndep_congr}
+  Let \((\A,\phi)\) be a probability space, and let \((\A_i)_{i\in I}\) be a family of
+  freely independent subalgebras. Additionally, let \(f:J \rightarrow I\) be an injective map. Then the family
+  \((\A_{f(j)})_{j\in J}\) is freely independent.
+\end{lemma}
+\begin{proof}
+  This follows quite readily. Let \((a_k)_{k\in [n]}\) be a finite sequence of centered elements
+  with alternating \(J\)-labeling \(g:[n]\rightarrow J\), such that \(a_k \in \A_{f(g(k))}\).
+  Then \(f \o g\) is an alternating \(I\)-labeling for that sequence: given adjacent \(k,k' \in [n]\),
+  since \(g(k)\) and \(g(k')\) are distinct, and \(f\) is injective, so are \(f(g(k))\) and \(f(g(k'))\).
+  Then, since \((\A_i)_{i\in I}\) is freely independent, we have that the product of \((a_k)_{k\in [n]}\)
+  is balanced, concluding the proof. As a note for formalizing, it may be useful to prove this
+  for any \((\mathcal{B}_j){j\in J}\) with \(\matchal{B}_j = \A_{f(j)}\), allowing you to abstract these families.
+\end{proof}
