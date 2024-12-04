@@ -7,6 +7,9 @@
   families of subalgebras with \(\A_i = \B_i\) for all \(i\). Then if \((\A_i)_{i \in I}\) is freely
   independent, so is \((\B_i)_{i\in I}\).
 \end{lemma}
+\begin{proof}
+  by extentionality of families.
+\end{proof}
 
 \begin{lemma}
   \label{lem:freeIndep_of_inj}
@@ -23,4 +26,31 @@
   Then, since \((\A_i)_{i\in I}\) is freely independent, we have that the product of \((a_k)_{k\in [n]}\)
   is balanced, concluding the proof. As a note for formalizing, it may be useful to prove this
   for any \((\mathcal{B}_j){j\in J}\) with \(\mathcal{B}_j = \A_{f(j)}\), allowing you to abstract these families.
+\end{proof}
+
+\begin{lemma}
+
+\end{lemma}
+
+\begin{lemma}
+  \label{lem:mem_iSup_induction_balanced}
+  Let \((\A,\phi)\) be a probability space, let \((\A_i)_{i\in I}\) be a family of subalgebras,
+  let \(f:J \rightarrow I\) be a map, and let \(a \in \bigcup_{f(i)=j} \A_i\) for some \(j\).
+  Then (something something a is a sum of products of balanced elements, plus a constant term)
+\end{lemma}
+
+
+
+\begin{lemma}
+  \label{lem:freeIndep_iUnion}
+  Let \((\A,\phi)\) be a probability space, and let \((\A_i)_{i\in I}\) be a family of
+  freely independent subalgebras. Additionally, let \(f:I \rightarrow J\) be any map.
+  Define \(\B_j := \text{alg}\left(\bigcup_{f(i)=j} \A_i\right)\) for all \(j\in J\).
+  Then \((B_j)_{j\in J}\) is freely independent. note: Maybe use isup notation?
+\end{lemma}
+\begin{proof}
+  let \((a_k)_{k\in[n]}\) be a finite sequence of balanced elements, and let \(g:[n]\rightarrow J\)
+  be an alternating \(J\)-labeling such that \(a_k \in \B_{g(k)}\) for all \(k \in [n]\).
+
+
 \end{proof}
